@@ -77,8 +77,8 @@ article p {
 }
 
 footer {
-  background: url('../img/footer-building.jpg') no-repeat top center;
-  background-size: 200%;
+  background: url('../img/footer-building-2.jpg') no-repeat top center;
+  background-size: 280%;
   min-height: 250px;
   margin-top: 80px;
   position: relative;
@@ -116,7 +116,7 @@ footer small {
     font-size: 16px;
   }
   footer {
-    background-size: 1300px;
+    background-size: 1740px;
     min-height: 400px;
     margin-top: 160px;
   }
@@ -133,4 +133,21 @@ footer small {
 @media (min-width: 992px) { ... }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) {
+
+	footer {
+		background-size: 2000px;
+		min-height: 400px;
+		margin-top: 160px;
+	}
+
+}
+
+
+@media (min-width: 1600px) {
+	footer {
+		background-size: 100%;
+		min-height: 400px;
+		margin-top: 160px;
+	}
+}
