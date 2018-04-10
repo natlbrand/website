@@ -48,12 +48,29 @@ table {
 }
 
 
+
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 20rem;
+  min-height: 100%;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
 header {
-  background: url('../img/logo.png') no-repeat;
+  background: url('../img/logo.png') no-repeat bottom;
   background-size: 120px;
   text-indent: 100%;
   white-space: nowrap;
@@ -61,7 +78,8 @@ header {
   display: block;
   height: 60px;
   width: 120px;
-  margin: 60px auto;
+  margin: 0 auto 64px;
+	padding-top: 128px;
 }
 
 article {
@@ -77,11 +95,18 @@ article p {
 }
 
 footer {
+	position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+
   background: url('../img/footer-building-2.jpg') no-repeat top center;
   background-size: 280%;
   min-height: 250px;
   margin-top: 80px;
-  position: relative;
+  /* position: relative; */
 }
 footer small {
   font-size: 8px;
@@ -101,11 +126,15 @@ footer small {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+	body {
+		padding-bottom: 29rem;
+	}
   header {
     background-size: 164px;
     height: 82px;
     width: 164px;
-    margin: 100px auto;
+    margin: 0 auto 100px;
+		padding-top: 200px;
   }
   article {
     width: 488px;
@@ -119,6 +148,7 @@ footer small {
     background-size: 1740px;
     min-height: 400px;
     margin-top: 160px;
+		box-shadow: 0 50vh 0 50vh #444;
   }
   footer small {
     font-size: 10px;
@@ -137,8 +167,6 @@ footer small {
 
 	footer {
 		background-size: 2000px;
-		min-height: 400px;
-		margin-top: 160px;
 	}
 
 }
@@ -147,7 +175,5 @@ footer small {
 @media (min-width: 1600px) {
 	footer {
 		background-size: 100%;
-		min-height: 400px;
-		margin-top: 160px;
 	}
 }
