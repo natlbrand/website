@@ -105,6 +105,10 @@ article p {
   font-size: 14px;
 }
 
+article em {
+  font-style: italic;
+}
+
 footer {
 	position: absolute;
   right: 0;
